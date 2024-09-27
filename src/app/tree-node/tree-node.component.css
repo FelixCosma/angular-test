@@ -1,0 +1,42 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1em;
+    position: relative;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0.2em 0;
+    position: relative;
+  }
+  
+  li::before {
+    content: '';
+    position: absolute;
+    top: 0.8em;
+    left: -0.5em;
+    width: 0.5em;
+    height: 1px;
+    background-color: #000;
+  }
+  
+  li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+  }
+  
+  li:last-child::after {
+    height: 0.8em;
+  }
+  
+  .tree-node {
+    margin-left: 1em;
+    position: relative;
+  }
+  
